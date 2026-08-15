@@ -30,6 +30,9 @@ public class Users {
 
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
+    
+    @Column(name = "email_verified", nullable = false)
+    private boolean emailVerified = false;
 
     @PrePersist
     protected void onCreate() {
@@ -98,5 +101,13 @@ public class Users {
 
     public LocalDateTime getUpdatedAt() {
         return updatedAt;
+    }
+    
+    public boolean isEmailVerified() {
+        return emailVerified;
+    }
+
+    public void setEmailVerified(boolean emailVerified) {
+        this.emailVerified = emailVerified;
     }
 }

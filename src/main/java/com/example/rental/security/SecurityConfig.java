@@ -43,6 +43,7 @@ public class SecurityConfig {
                 // PUBLIC APIs
                 .requestMatchers(
                     "/api/auth/signup",
+                    "/api/auth/verify-otp",
                     "/api/auth/login"
                 ).permitAll()
 

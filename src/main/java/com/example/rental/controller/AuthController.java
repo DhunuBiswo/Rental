@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.rental.dto.LoginRequestDto;
 import com.example.rental.dto.LoginResponseDto;
 import com.example.rental.dto.SignupRequestDto;
+import com.example.rental.dto.VerifyOtpRequestDto;
 import com.example.rental.service.AuthService;
 
 
@@ -25,6 +26,15 @@ public class AuthController {
 
         return ResponseEntity.ok(
                 authService.signup(request)
+        );
+    }
+
+    @PostMapping("/verify-otp")
+    public ResponseEntity<String> verifyOtp(
+            @RequestBody VerifyOtpRequestDto request) {
+
+        return ResponseEntity.ok(
+                authService.verifyOtp(request)
         );
     }
 
