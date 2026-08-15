@@ -1,2 +1,16 @@
+com\example\rental\controller\AuthController.class
+com\example\rental\service\EmailService.class
+com\example\rental\dto\VerifyOtpRequestDto.class
+com\example\rental\dto\SignupRequestDto.class
+com\example\rental\security\JwtAuthenticationFilter.class
+com\example\rental\security\SecurityConfig.class
+com\example\rental\repository\EmailOtpRepository.class
+com\example\rental\repository\UserRepository.class
 com\example\rental\controller\HelloWorldController.class
+com\example\rental\dto\LoginRequestDto.class
 com\example\rental\RentalApplication.class
+com\example\rental\service\AuthService.class
+com\example\rental\dto\LoginResponseDto.class
+com\example\rental\security\JwtService.class
+com\example\rental\entity\EmailOtp.class
+com\example\rental\entity\Users.class
