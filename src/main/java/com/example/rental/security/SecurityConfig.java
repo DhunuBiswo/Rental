@@ -45,7 +45,9 @@ public class SecurityConfig {
                     "/api/auth/signup",
                     "/api/auth/verify-otp",
                     "/hello",
-                    "/api/auth/login"
+                    "/api/auth/login",
+                    "/zip/files",
+                    "/zip/files/upload"
                 ).permitAll()
 
                 // EVERYTHING ELSE
